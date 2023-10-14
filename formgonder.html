@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Ekleme</title>
+    <script src="assets/js/datasend.js" defer></script>
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+    <h1>Haber Ekleme Formu</h1>
+    <form id="newsForm">
+        <label for="short_title">Kısa Başlık:</label>
+        <input type="text" id="short_title" required><br>
+
+        <label for="big_title">Uzun Başlık:</label>
+        <input type="text" id="big_title" required><br>
+
+        <label for="category">Kategori:</label>
+        <input type="text" id="category" required><br>
+
+        <label for="league">Lig:</label>
+        <input type="text" id="league" required><br>
+
+        <label for="imageInput">Görsel:</label>
+        <input type="file" id="imageInput" accept="image/*" required>
+
+        <label for="content_entrance">Yazı Giriş Kısmı:</label>
+        <textarea id="content_entrance" required rows="5"></textarea><br>
+
+        <label for="team">Takım:</label>
+        <input type="text" id="team" required><br>
+
+        <label for="content_detail">Yazı Detay:</label>
+        <textarea id="content_detail" required rows="30"></textarea><br>
+        
+        <label for="team_icon">Takım İkon:</label>
+        <input type="text" id="team_icon" required></textarea><br>
+
+        <button type="submit">Gönder</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+    <script src="assets/js/script.js" defer></script>
+
+    <h2>Yorumlar</h2>
+      <div class="comment-content"></div>
+      <form id="comment-form">
+        <label for="Username">Adınız:</label>
+        <input type="text" id="Username" required><br>
+    
+        <label for="Review">Yorumunuz:</label>
+        <textarea id="Review" rows="4" required placeholder="Yorumunuz"></textarea><br>
+        
+        <button type="submit">Yorum Ekle</button>
+    </form>
+    
+</body>
+</html>

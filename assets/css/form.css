@@ -1,0 +1,6 @@
+#newsForm {
+    display: grid;
+}
+#newsForm label {
+    margin-bottom: 10px;
+}
